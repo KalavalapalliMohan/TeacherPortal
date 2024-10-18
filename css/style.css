@@ -1,0 +1,298 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .login-container {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 80px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .input-container i {
+    margin-right: 10px;
+    color: #666;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .btn {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #555;
+  }
+
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #002aff;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .toggle-password {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #666;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .table-container {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding: 15px;
+    text-align: center;
+    color: #000000; /* Light grey color */
+    border: 1px solid transparent; /* No borders for header */
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    border-top: 1px solid #ccc; /* Horizontal border for rows */
+}
+
+.AddButton {
+    margin-top: 25px;
+    padding: 10px 28px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancelButton{
+    position: relative;
+    /* left: 120px; */
+    margin-top: 25px;
+    padding: 10px 28px;
+    background-color: #afafaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Popup styling */
+.popup, .update-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.popup.show, .update-popup.show {
+    display: block;
+}
+
+.popup-close, .update-popup-close {
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+
+.overlay, .update-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.show, .update-overlay.show {
+    display: block;
+}
+
+.input-field {
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-container i {
+    margin-right: 10px;
+    color: #666;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.round {
+    position: relative;
+    right: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+}
+
+.action {
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+
+
+/* Delete styling */
+.popup, .Delete-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.popup.show, .Delete-popup.show {
+    display: block;
+}
+
+.popup-close, .Delete-popup-close {
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+
+.overlay, .Delete-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.show, .Delete-overlay.show {
+    display: block;
+}
+
+.mandatory{
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.msg{
+    position: relative;
+    top: 7px;
+}
